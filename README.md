@@ -60,7 +60,7 @@ The connector supports following VMRay products:
 
 Clone the repository into a local folder.
 
-    git clone https://github.com/vmray/sentinelone-singularity-vmray-connector.git
+    git clone https://github.com/avoitenko16/sentinelone-singularity-vmray-connector-su.git
 
 Install the requirements.
 
