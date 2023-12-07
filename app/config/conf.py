@@ -181,7 +181,7 @@ class SentinelOneConfig:
         URL = "%s/%s" % (HOSTNAME_URL, API_PREFIX)
 
         # Authentication Url to authenticate SentinelOne
-        AUTH_URL = "%s/users/login/by-api-token" % URL
+        AUTH_URL = "%s/users/api-token-details" % URL
 
         # User-Agent value to use for SentinelOne for Endpoint API
         USER_AGENT = "S1-VMRayAnalyzer-Connector"
@@ -219,6 +219,9 @@ class SentinelOneConfig:
     # Indicator related configurations
     # https://usea1-partners.sentinelone.net/docs/en/indicators.html
     class INDICATOR:
+        # Check whether we want to submit IOCs to SentinelOne
+        ACTIVE = False
+        
         # Title for indicators which created by connector
         NAME = "Indicator based on a VMRay Analyzer Report"
 
